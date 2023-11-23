@@ -1,0 +1,21 @@
+<div class="p-2 d-flex justify-content-center">
+    <article id="content-main" class="d-grid">
+        <h1>Bienvenido a la aplicacion web</h1>
+        <p>Te ofrecemos diferentes opciones en donde tu puede manejar lo que deseas</p>
+        <main id="container-card" class="d-flex flex-wrap justify-content-center gap-2">
+            @for (item of listaAccesos; track item) {
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <i [class]="item.icono"></i>
+                        </div>
+                        <h3>{{item.nombre}}</h3>
+                        <p>{{item.descripcion}}</p>
+                    </div>
+                </div>
+            } @empty {
+                <h2>NO SE ENCONTRO NADA</h2>
+            }
+        </main>
+    </article>
+</div>

@@ -1,0 +1,17 @@
+#content-main {
+    max-width: 30rem;
+}
+
+#content-main > h1 {
+    text-align: center;
+}
+
+#container-card .card {
+    width: 12rem;
+    & div:has(>i) {
+        text-align: center;
+    }
+    & i {
+        font-size: xx-large;
+    }
+}

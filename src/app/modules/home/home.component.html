@@ -1,0 +1,15 @@
+<div class="container-fluid p-0 vh-100 overflow-hidden">
+    <header class="fixed-top d-flex justify-content-between align-items-center">
+        <label for="menu-activate" class="bi bi-list cursor-pointer-icons">
+            <input type="checkbox" id="menu-activate" class="d-none">
+        </label>
+        <span>Aplicacion web</span>
+        <i class="bi bi-person cursor-pointer-icons"></i>
+    </header>
+    <section id="content-app" class="pt-5 vh-100 d-flex">
+        <app-sidebar id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark z-2"></app-sidebar>
+        <main class="overflow-auto">
+            <router-outlet></router-outlet>
+        </main>
+    </section>
+</div>

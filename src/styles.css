@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-ribbon-050: #eef8ff;
+    --blue-ribbon-100: #d8eeff;
+    --blue-ribbon-200: #b9e0ff;
+    --blue-ribbon-300: #89cfff;
+    --blue-ribbon-400: #52b4ff;
+    --blue-ribbon-500: #2a91ff;
+    --blue-ribbon-600: #0d6efd;
+    --blue-ribbon-700: #0c5ae9;
+    --blue-ribbon-800: #1149bc;
+    --blue-ribbon-900: #144194;
+    --blue-ribbon-950: #11295a;
+}
