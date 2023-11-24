@@ -1,0 +1,28 @@
+<h1 class="viajes">Viajes</h1>
+<table class="tabla">
+  <tr>
+    <th class="id">Placa</th>
+    <th class="nombre_afiliacion">Ruta</th>
+    <th class="tipo_afiliacion">Numero de Pasajero</th>
+    <th class="fecha_inicio">Fecha Viaje</th>
+    <th class="fecha_fin">Codigo Conductor</th>
+    <th class="fecha_fin">Numero Vuelta</th>
+    <th class="fecha_fin">Valo pasaj</th>
+    <th class="fecha_fin">Accion</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let viajes of viajes">
+      <td>{{viajes.buses?.id}}</td>
+      <td>{{viajes.rutas?.id}}</td>
+      <td>{{viajes.vi_NumePasajero}}</td>
+      <td>{{viajes.vi_FechViaje}}</td>
+      <td>{{viajes.conductores?.id}}</td>
+      <td>{{viajes.id}}</td>
+      <td>{{viajes.rutas?.ru_ValoPasj}}</td>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Agregar</button>
+        <button class="btn btn-primary" type="button">Eliminar</button>
+      </div>
+    </tr>
+  </tbody>
+</table>

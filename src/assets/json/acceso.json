@@ -7,9 +7,9 @@
   },
   {
     "id": 2,
-    "nombre": "Dashboard",
+    "nombre": "Viajes",
     "icono": "bi bi-speedometer2",
-    "ruta": "/home/2",
+    "ruta": "/home/viajes",
     "descripcion": "Vas a poder visualizar de manera estadistica los movimientos de los datos"
   },
   {

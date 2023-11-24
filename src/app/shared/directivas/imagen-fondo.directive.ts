@@ -12,7 +12,7 @@ export class ImagenFondoDirective {
 
   @HostListener('error')
   cargarImagenPorDefecto() {
-    this.elementRef.nativeElement.src = '../../../assets/img/fondo-campo_verde.jpg';
+    this.elementRef.nativeElement.src = '../../../assets/img/viajes.jpg';
   }
 
 }
