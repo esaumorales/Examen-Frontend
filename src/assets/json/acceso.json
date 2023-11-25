@@ -14,23 +14,23 @@
   },
   {
     "id": 3,
-    "nombre": "Orders",
+    "nombre": "Rutas",
     "icono": "bi bi-card-checklist",
-    "ruta": "/home/3",
+    "ruta": "/home/rutas",
     "descripcion": "Vas a poder realizar una lista de pedidos y podras visualizar el estado de cada uno"
   },
   {
     "id": 4,
-    "nombre": "Products",
+    "nombre": "Conductores",
     "icono": "bi bi-box",
-    "ruta": "/home/4",
+    "ruta": "/home/conductores",
     "descripcion": "Vas a poder agregar las compras en un carrito, prodas ver todos los productos que ofrecemos y vas a poder comentar que te parecieron los productos"
   },
   {
     "id": 5,
-    "nombre": "Customers",
+    "nombre": "Buses",
     "icono": "bi bi-person-circle",
-    "ruta": "/home/5",
+    "ruta": "/home/buses",
     "descripcion": "Vas a poder ver el historial de compras de los usuarios y podras modificar el estado de los mismos gaaaaa"
   }
 ]

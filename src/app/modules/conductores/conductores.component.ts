@@ -1,0 +1,39 @@
+import { ConductoresService } from './conductores.service';
+import { conductores } from './../../models/conductores';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-conductores',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './conductores.component.html',
+  styleUrl: './conductores.component.css'
+})
+export class ConductoresComponent {
+  conductores : conductores[] = [];
+
+  constructor(
+    private conductoresService: ConductoresService
+  ) { }
+
+  ngOnInit(): void {
+    this.conductoresService.listar().subscribe(data => {
+      this.conductores = data
+      console.log(data)
+    });
+    ;
+  }
+
+  Eliminar(id: number) {
+    this.conductoresService.eliminar(id).subscribe(() => {
+      // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
+      // Por ejemplo, puedes actualizar la lista de documentos.
+      this.conductoresService.listar().subscribe(data => {
+        this.conductores = data;
+        console.log(data);
+      });
+    });
+  }
+
+}
