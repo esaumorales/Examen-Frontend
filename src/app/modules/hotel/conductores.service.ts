@@ -11,22 +11,22 @@ export class ConductoresService {
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable <hotel[]>{
+  listar(): Observable <any[]>{
     return this.http.get<hotel[]>(this.url + '/listar');
   }
-  crear(hotel: hotel){
-    return this.http.post<string>(this.url +'/agregar' , hotel);
+  crear(hotel: hotel): Observable<hotel>{
+    return this.http.post<hotel>(this.url +'/agregar' , hotel);
   }
 
-  editar(hotel: hotel) {
-    return this.http.put(this.url, hotel);
+  editar(id: hotel, hotel : hotel) {
+    return this.http.put(this.url + id, hotel);
   }
 
   eliminar(id: number): Observable<any> {
     return this.http.delete(this.url + '/eliminar/' + id);
   }
 
-  IDConductores(id: hotel) {
-    this.http.get(this.url + '/' + id);
+  IDHotel(id: number): Observable<any> {
+    return this.http.get(this.url + '/' + id);
   }
 }

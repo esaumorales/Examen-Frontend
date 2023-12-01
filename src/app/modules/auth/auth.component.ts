@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class AuthComponent {
   loginForm: FormGroup = new FormBuilder().group({
-    username: ['', [Validators.required, Validators.email]],
+    username: ['', [Validators.required]],
     password: ['', Validators.required]
   });
 

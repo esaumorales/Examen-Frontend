@@ -1,23 +1,23 @@
-<h1 class="rutas">Viajes</h1>
+<h1 class="rutas">Reserva</h1>
 <table class="tabla">
-  <button class="btn btn-primary" id="agregar" type="button">Agregar</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Agregar</button>
   <tr>
     <th class="id">ID</th>
     <th class="nombre_afiliacion">Clase</th>
-    <th class="tipo_afiliacion">Clase</th>
-    <th class="fecha_inicio">ID De Vuelo</th>
-    <th class="fecha_fin">ID de Cliente</th>
-    <th class="fecha_fin">ID de Hotel</th>
+    <th class="tipo_afiliacion">Vuelo de Origen</th>
+    <th class="fecha_inicio">Nombre del CLiente</th>
+    <th class="fecha_fin">Nombre del Hotel</th>
+    <th class="fecha_fin">Direccion</th>
     <th class="fecha_fin">Accion</th>
   </tr>
   <tbody>
     <tr *ngFor="let reserva of reserva">
       <td>{{reserva.id}}</td>
       <td>{{reserva.clase}}</td>
-      <td>{{reserva.vuelo?.id}}</td>
-      <td>{{reserva.cliente?.id}}</td>
-      <td>{{reserva.hotel?.id}}</td>
-      <td>{{reserva.sucursal?.id}}</td>
+      <td>{{reserva.vuelo?.origen}}</td>
+      <td>{{reserva.cliente?.nombres}}</td>
+      <td>{{reserva.hotel?.nombre}}</td>
+      <td>{{reserva.sucursal?.direccion}}</td>
       <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" type="button">Editar</button>
         <button class="btn btn-primary" type="button">Eliminar</button>
@@ -25,3 +25,41 @@
     </tr>
   </tbody>
 </table>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nombre de Reserva</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Clase:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Vuelo de Origen:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Nombre de CLiente:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">nombre de Hotel:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Sucursal:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>

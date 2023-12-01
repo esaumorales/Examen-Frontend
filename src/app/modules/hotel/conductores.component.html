@@ -21,9 +21,10 @@
       <td>{{hotel.provincia}}</td>
       <td>{{hotel.telefono}}</td>
       <td>{{hotel.numero_estrellas}}</td>
-      <td><div class="d-grid gap-2 d-md-block">
+      <td>
+        <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" type="button">Editar</button>
-        <button class="btn btn-primary" type="button">Eliminar</button>
+        <button class="btn btn-primary" type="button" (click)="hotel.id && Eliminar(hotel.id)">Eliminar</button>
       </div></td>
     </tr>
   </tbody>
@@ -32,24 +33,40 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Nombre de COnductor</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="exampleModalLabel">Nombre de Hotel</h5>
+        <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <label for="recipient-name" class="col-form-label">Hotel:</label>
+            <input type="text"  class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
+            <label for="message-text" class="col-form-label">Direccion:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Localidad:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Provincia:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Telefono:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Estrellas:</label>
             <textarea class="form-control" id="message-text"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Agregar</button>
       </div>
     </div>
   </div>

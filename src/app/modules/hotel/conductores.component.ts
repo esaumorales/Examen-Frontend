@@ -11,11 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './conductores.component.css'
 })
 export class ConductoresComponent {
-  title = 'angular-dialog';
   hotel : hotel[] = [];
 
   constructor(
-    private conductoresService: ConductoresService,
+    private conductoresService: ConductoresService
   ) { }
 
   ngOnInit(): void {

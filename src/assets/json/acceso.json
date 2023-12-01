@@ -10,34 +10,34 @@
     "nombre": "Reserva",
     "icono": "bi bi-airplane",
     "ruta": "/home/reserva",
-    "descripcion": "Vas a poder la lista de viajes"
+    "descripcion": "Vas a poder la lista de Reserva"
   },
   {
     "id": 3,
     "nombre": "Sucursal",
-    "icono": "bi bi-sign-yield-fill",
+    "icono": "bi bi-buildings",
     "ruta": "/home/sucursal",
     "descripcion": "Vas a poder realizar la lista de rutas"
   },
   {
     "id": 4,
     "nombre": "Hotel",
-    "icono": "bi bi-person",
+    "icono": "bi bi-buildings",
     "ruta": "/home/hotel",
-    "descripcion": "Vas a poder ver la lista de conductores"
+    "descripcion": "Vas a poder ver la lista de Hotel"
   },
   {
     "id": 5,
     "nombre": "Vuelo",
     "icono": "bi bi-airplane",
     "ruta": "/home/vuelo",
-    "descripcion": "Vas a poder ver la lista de buses"
+    "descripcion": "Vas a poder ver la lista de Vuelo"
   },
   {
     "id": 6,
     "nombre": "Cliente",
-    "icono": "bi bi-buildings",
+    "icono": "bi bi-person",
     "ruta": "/home/cliente",
-    "descripcion": "Vas a poder ver el la lista de terminal"
+    "descripcion": "Vas a poder ver el la lista de Cliente"
   }
 ]
