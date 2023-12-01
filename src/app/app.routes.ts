@@ -2,10 +2,11 @@ import { Routes } from '@angular/router';
 import { AuthComponent } from './modules/auth/auth.component';
 import { HomeComponent } from './modules/home/home.component';
 import { HouseComponent } from './modules/home/pages/house/house.component';
-import { ViajesComponent } from './modules/viajes/viajes.component';
-import { RutasComponent } from './modules/rutas/rutas.component';
-import { ConductoresComponent } from './modules/conductores/conductores.component';
-import { BusesComponent } from './modules/buses/buses.component';
+import { ViajesComponent } from './modules/reserva/viajes.component';
+import { RutasComponent } from './modules/sucursal/rutas.component';
+import { ConductoresComponent } from './modules/hotel/conductores.component';
+import { TerminalComponent } from './modules/cliente/terminal.component';
+import { VueloComponent } from './modules/vuelo/vuelo.component';
 
 export const routes: Routes = [
     {
@@ -30,20 +31,24 @@ export const routes: Routes = [
                 component: HouseComponent,
             },
             {
-              path: 'viajes',
+              path: 'reserva',
               component: ViajesComponent,
             },
             {
-              path: 'rutas',
+              path: 'sucursal',
               component: RutasComponent,
             },
             {
-              path: 'conductores',
+              path: 'hotel',
               component: ConductoresComponent,
             },
             {
-              path: 'buses',
-              component: BusesComponent,
+              path: 'vuelo',
+              component: VueloComponent,
+            },
+            {
+              path: 'cliente',
+              component: TerminalComponent,
             }
         ]
     }

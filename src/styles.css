@@ -11,3 +11,6 @@
     --blue-ribbon-900: #144194;
     --blue-ribbon-950: #11295a;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

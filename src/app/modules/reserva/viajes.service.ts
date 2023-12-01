@@ -1,32 +1,32 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { viajes } from '../../models/viajes';
+import { reserva } from '../../models/reserva';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ViajesService {
-  private url : string = 'http://localhost:2323/viajes';
+  private url : string = 'http://localhost:2323/reserva';
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable <viajes[]>{
-    return this.http.get<viajes[]>(this.url + '/listar');
+  listar(): Observable <reserva[]>{
+    return this.http.get<reserva[]>(this.url + '/listar');
   }
-  crear(viajes: viajes){
-    return this.http.post<string>(this.url +'/agregar' , viajes);
+  crear(viajes: reserva){
+    return this.http.post<string>(this.url +'/agregar' , reserva);
   }
 
-  editar(viajes: viajes) {
-    return this.http.put(this.url, viajes);
+  editar(reserva: reserva) {
+    return this.http.put(this.url, reserva);
   }
 
   eliminar(id: number): Observable<any> {
     return this.http.delete(this.url + '/eliminar/' + id);
   }
 
-  IDviajes(id: viajes) {
+  IDviajes(id: reserva) {
     this.http.get(this.url + '/' + id);
   }
 }

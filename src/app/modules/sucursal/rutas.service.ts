@@ -1,32 +1,32 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { rutas } from '../../models/rutas';
+import { sucursal } from '../../models/sucursal';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RutasService {
-  private url : string = 'http://localhost:2323/rutas';
+  private url : string = 'http://localhost:2323/sucursal';
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable <rutas[]>{
-    return this.http.get<rutas[]>(this.url + '/listar');
+  listar(): Observable <sucursal[]>{
+    return this.http.get<sucursal[]>(this.url + '/listar');
   }
-  crear(rutas: rutas){
-    return this.http.post<string>(this.url +'/agregar' , rutas);
+  crear(sucursal: sucursal){
+    return this.http.post<string>(this.url +'/agregar' , sucursal);
   }
 
-  editar(rutas: rutas) {
-    return this.http.put(this.url, rutas);
+  editar(sucursal: sucursal) {
+    return this.http.put(this.url, sucursal);
   }
 
   eliminar(id: number): Observable<any> {
     return this.http.delete(this.url + '/eliminar/' + id);
   }
 
-  IDrutas(id: rutas) {
+  IDrutas(id: sucursal) {
     this.http.get(this.url + '/' + id);
   }
 }

@@ -1,5 +1,7 @@
 #content-main {
-    max-width: 30rem;
+    max-width: 50rem;
+    min-width: 10rem;
+
 }
 
 #content-main > h1 {

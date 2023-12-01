@@ -1,5 +1,5 @@
 import { ConductoresService } from './conductores.service';
-import { conductores } from './../../models/conductores';
+import { hotel } from '../../models/hotel';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,15 +11,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './conductores.component.css'
 })
 export class ConductoresComponent {
-  conductores : conductores[] = [];
+  title = 'angular-dialog';
+  hotel : hotel[] = [];
 
   constructor(
-    private conductoresService: ConductoresService
+    private conductoresService: ConductoresService,
   ) { }
 
   ngOnInit(): void {
     this.conductoresService.listar().subscribe(data => {
-      this.conductores = data
+      this.hotel = data
       console.log(data)
     });
     ;
@@ -30,7 +31,7 @@ export class ConductoresComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.conductoresService.listar().subscribe(data => {
-        this.conductores = data;
+        this.hotel = data;
         console.log(data);
       });
     });

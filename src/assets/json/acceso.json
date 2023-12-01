@@ -7,30 +7,37 @@
   },
   {
     "id": 2,
-    "nombre": "Viajes",
-    "icono": "bi bi-speedometer2",
-    "ruta": "/home/viajes",
-    "descripcion": "Vas a poder visualizar de manera estadistica los movimientos de los datos"
+    "nombre": "Reserva",
+    "icono": "bi bi-airplane",
+    "ruta": "/home/reserva",
+    "descripcion": "Vas a poder la lista de viajes"
   },
   {
     "id": 3,
-    "nombre": "Rutas",
-    "icono": "bi bi-card-checklist",
-    "ruta": "/home/rutas",
-    "descripcion": "Vas a poder realizar una lista de pedidos y podras visualizar el estado de cada uno"
+    "nombre": "Sucursal",
+    "icono": "bi bi-sign-yield-fill",
+    "ruta": "/home/sucursal",
+    "descripcion": "Vas a poder realizar la lista de rutas"
   },
   {
     "id": 4,
-    "nombre": "Conductores",
-    "icono": "bi bi-box",
-    "ruta": "/home/conductores",
-    "descripcion": "Vas a poder agregar las compras en un carrito, prodas ver todos los productos que ofrecemos y vas a poder comentar que te parecieron los productos"
+    "nombre": "Hotel",
+    "icono": "bi bi-person",
+    "ruta": "/home/hotel",
+    "descripcion": "Vas a poder ver la lista de conductores"
   },
   {
     "id": 5,
-    "nombre": "Buses",
-    "icono": "bi bi-person-circle",
-    "ruta": "/home/buses",
-    "descripcion": "Vas a poder ver el historial de compras de los usuarios y podras modificar el estado de los mismos gaaaaa"
+    "nombre": "Vuelo",
+    "icono": "bi bi-airplane",
+    "ruta": "/home/vuelo",
+    "descripcion": "Vas a poder ver la lista de buses"
+  },
+  {
+    "id": 6,
+    "nombre": "Cliente",
+    "icono": "bi bi-buildings",
+    "ruta": "/home/cliente",
+    "descripcion": "Vas a poder ver el la lista de terminal"
   }
 ]

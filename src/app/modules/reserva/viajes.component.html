@@ -1,0 +1,27 @@
+<h1 class="rutas">Viajes</h1>
+<table class="tabla">
+  <button class="btn btn-primary" id="agregar" type="button">Agregar</button>
+  <tr>
+    <th class="id">ID</th>
+    <th class="nombre_afiliacion">Clase</th>
+    <th class="tipo_afiliacion">Clase</th>
+    <th class="fecha_inicio">ID De Vuelo</th>
+    <th class="fecha_fin">ID de Cliente</th>
+    <th class="fecha_fin">ID de Hotel</th>
+    <th class="fecha_fin">Accion</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let reserva of reserva">
+      <td>{{reserva.id}}</td>
+      <td>{{reserva.clase}}</td>
+      <td>{{reserva.vuelo?.id}}</td>
+      <td>{{reserva.cliente?.id}}</td>
+      <td>{{reserva.hotel?.id}}</td>
+      <td>{{reserva.sucursal?.id}}</td>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Editar</button>
+        <button class="btn btn-primary" type="button">Eliminar</button>
+      </div>
+    </tr>
+  </tbody>
+</table>

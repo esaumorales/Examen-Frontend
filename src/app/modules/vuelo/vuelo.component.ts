@@ -1,37 +1,37 @@
-import { BusesService } from './buses.service';
+import { vuelo } from '../../models/vuelo';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { buses } from '../../models/buses';
+import { vueloService } from './vuelo.service';
 
 @Component({
   selector: 'app-buses',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './buses.component.html',
-  styleUrl: './buses.component.css'
+  templateUrl: './vuelo.component.html',
+  styleUrl: './vuelo.component.css'
 })
-export class BusesComponent {
+export class VueloComponent {
 
-buses : buses[] = [];
+vuelo : vuelo[] = [];
 
   constructor(
-    private busesService: BusesService
+    private vueloService: vueloService
   ) { }
 
   ngOnInit(): void {
-    this.busesService.listar().subscribe(data => {
-      this.buses = data
+    this.vueloService.listar().subscribe(data => {
+      this.vuelo = data
       console.log(data)
     });
     ;
   }
 
   Eliminar(id: number) {
-    this.busesService.eliminar(id).subscribe(() => {
+    this.vueloService.eliminar(id).subscribe(() => {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
-      this.busesService.listar().subscribe(data => {
-        this.buses = data;
+      this.vueloService.listar().subscribe(data => {
+        this.vuelo = data;
         console.log(data);
       });
     });

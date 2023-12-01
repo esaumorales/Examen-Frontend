@@ -1,0 +1,25 @@
+<h1 class="rutas">Rutas</h1>
+<table class="tabla">
+  <button class="btn btn-primary" id="agregar" type="button">Agregar</button>
+  <tr>
+    <th class="id">Codigo</th>
+    <th class="fecha_fin">Direccion</th>
+    <th class="fecha_fin">Localidad</th>
+    <th class="fecha_fin">Provincia</th>
+    <th class="fecha_fin">Telefono</th>
+    <th class="fecha_fin">Accion</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let sucursal of sucursal">
+      <td>{{sucursal.id}}</td>
+      <td>{{sucursal.direccion}}</td>
+      <td>{{sucursal.localidad}}</td>
+      <td>{{sucursal.provincia}}</td>
+      <td>{{sucursal.telefono}}</td>
+      <td><div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Editar</button>
+        <button class="btn btn-primary" type="button">Eliminar</button>
+      </div></td>
+    </tr>
+  </tbody>
+</table>

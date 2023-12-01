@@ -1,4 +1,4 @@
-import { rutas } from './../../models/rutas';
+import { sucursal } from '../../models/sucursal';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RutasService } from './rutas.service';
@@ -11,7 +11,7 @@ import { RutasService } from './rutas.service';
   styleUrl: './rutas.component.css'
 })
 export class RutasComponent {
-  rutas: rutas[] = [];
+  sucursal: sucursal[] = [];
 
   constructor(
     private rutasService: RutasService
@@ -19,7 +19,7 @@ export class RutasComponent {
 
   ngOnInit(): void {
     this.rutasService.listar().subscribe(data => {
-      this.rutas = data
+      this.sucursal = data
       console.log(data)
     });
     ;
@@ -30,7 +30,7 @@ export class RutasComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.rutasService.listar().subscribe(data => {
-        this.rutas = data;
+        this.sucursal = data;
         console.log(data);
       });
     });

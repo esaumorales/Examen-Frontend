@@ -1,0 +1,31 @@
+<h1 class="rutas">Buses</h1>
+<table class="tabla">
+  <button class="btn btn-primary" id="agregar" type="button">Agregar</button>
+  <tr>
+    <th class="id">ID</th>
+    <th class="fecha_fin">Fecha de Salida</th>
+    <th class="fecha_fin">Hora de Salida</th>
+    <th class="fecha_fin">Fecha de Llegada</th>
+    <th class="fecha_fin">Hora de Llegada</th>
+    <th class="fecha_fin">Origen</th>
+    <th class="fecha_fin">Destino</th>
+    <th class="fecha_fin">Hora de Llegada</th>
+    <th class="fecha_fin">Numero de Plazas</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let vuelo of vuelo">
+      <td>{{vuelo.id}}</td>
+      <td>{{vuelo.fecha_salida}}</td>
+      <td>{{vuelo.hora_salida}}</td>
+      <td>{{vuelo.fecha_llegada}}</td>
+      <td>{{vuelo.hora_llegada}}</td>
+      <td>{{vuelo.origen}}</td>
+      <td>{{vuelo.destino}}</td>
+      <td>{{vuelo.numero_plazas_totales}}</td>
+      <td><div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Editar</button>
+        <button class="btn btn-primary" type="button">Eliminar</button>
+      </div></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,29 @@
+<h1 class="rutas">Terminal</h1>
+<table class="tabla">
+  <button class="btn btn-primary" id="agregar" type="button">Agregar</button>
+  <tr>
+    <th class="id">ID</th>
+    <th class="fecha_fin">Dni</th>
+    <th class="fecha_fin">Nombre</th>
+    <th class="fecha_fin">Apellido</th>
+    <th class="fecha_fin">Telefono</th>
+    <th class="fecha_fin">Email</th>
+    <th class="fecha_fin">Accion</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let cliente of cliente">
+      <td>{{cliente.id}}</td>
+      <td>{{cliente.dni}}</td>
+      <td>{{cliente.nombres}}</td>
+      <td>{{cliente.apellidos}}</td>
+      <td>{{cliente.telefono}}</td>
+      <td>{{cliente.email}}</td>
+      <td>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">Editar</button>
+          <button class="btn btn-primary" type="button">Eliminar</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

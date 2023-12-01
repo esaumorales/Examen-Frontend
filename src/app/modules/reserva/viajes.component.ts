@@ -1,5 +1,5 @@
 import { ViajesService } from './viajes.service';
-import { viajes } from './../../models/viajes';
+import { reserva } from '../../models/reserva';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './viajes.component.css'
 })
 export class ViajesComponent {
-  viajes: viajes[] = [];
+  reserva: reserva[] = [];
 
   constructor(
     private ViajesService: ViajesService
@@ -19,7 +19,7 @@ export class ViajesComponent {
 
   ngOnInit(): void {
     this.ViajesService.listar().subscribe(data => {
-      this.viajes = data
+      this.reserva = data
       console.log(data)
     });
     ;
@@ -30,7 +30,7 @@ export class ViajesComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.ViajesService.listar().subscribe(data => {
-        this.viajes = data;
+        this.reserva = data;
         console.log(data);
       });
     });

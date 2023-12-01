@@ -1,0 +1,125 @@
+.rutas {
+  margin-top : 10px;
+  margin-left: 40vw;
+}
+
+
+.documento_intervencion {
+  margin-left: 280px;
+  margin-top : 15px;
+  color      : #014277;
+  font-family: Squada One;
+  font-size  : 50px;
+  font-style : normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.crear_buscar {
+  display: flex;
+}
+
+.boton_crear {
+  margin-top   : 1.3vw;
+  margin-left  : 2vw;
+  padding-top  : 10px;
+  width        : 7.3vw;
+  height       : 35px;
+  border-radius: 22vh;
+
+}
+
+.crear {
+  text-align     : center;
+  color          : #014277;
+  font-family    : Comic Neue;
+  font-size      : 20px;
+  line-height    : normal;
+  text-decoration: none;
+}
+
+
+.registrar_intervencion {
+  margin-left: 360px;
+  margin-top : 10px;
+  color      : #014277;
+  font-family: Squada One;
+  font-size  : 50px;
+  font-style : normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.datos {
+  margin-top : 15px;
+  font-family: Comic Neue;
+  font-size  : 15px;
+  font-style : normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.datos_intervencion {
+  margin-top : 20px;
+  margin-left: 40px;
+  height     : 500px;
+  width      : 1120px;
+}
+
+.estructura {
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.contenedor_ubigeo {
+  margin-top   : 20px;
+  width        : 630px;
+  height       : 90px;
+  border-radius: 10px;
+  border       : 2px solid #014277;
+  background   : #D6D6D6;
+  display      : flex;
+  flex-wrap    : wrap;
+}
+
+.ubigeo {
+  margin-top : 5px;
+  margin-left: 260px;
+  color      : #024379;
+  font-family: Concert One;
+  font-size  : 20px;
+  font-style : normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+.filtros {
+  margin-left: 10px;
+}
+
+.tabla {
+  width : 1145px;
+  margin: 15px auto 0;
+  /* Establece los márgenes izquierdo y derecho en "auto" para centrar horizontalmente */
+
+  background-color: #ffffff80;
+  border-collapse : collapse;
+}
+
+th,
+td {
+  padding        : 8px;
+  border         : 2px solid black;
+  border-collapse: collapse;
+  color          : black;
+  font-family    : Comic Neue;
+  font-size      : 15px;
+  font-style     : normal;
+  font-weight    : 650;
+  line-height    : normal;
+}
+#agregar{
+  margin-left: 71rem;
+}
